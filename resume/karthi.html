@@ -1,0 +1,806 @@
+<html data-type="html" data-identifier="4f3f072c-ab76-4077-91d3-6161cdc759ff" data-title="P. Karthikeyan Resume" data-version="2" width="1200" height="1000"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional resume of Karthikeyan, Senior Front-End Developer and Dynamic Creative Developer specializing in HTML5 advertising, DCO, ad operations, and campaign optimization.">
+  <meta name="author" content="Karthikeyan">
+  <title>P. Karthikeyan | Senior Front-End Developer</title>
+
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5e687b;
+      --accent: #1769aa;
+      --accent-dark: #104b7d;
+      --line: #dce3ec;
+      --surface: #f5f8fb;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #e9eef4;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--accent-dark);
+      text-decoration: underline;
+    }
+
+    .resume {
+      width: min(100%, 1120px);
+      margin: 32px auto;
+      background: var(--white);
+      box-shadow: 0 18px 50px rgba(23, 32, 51, 0.12);
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 32px;
+      align-items: center;
+      padding: 42px 52px 36px;
+      color: var(--white);
+      background: linear-gradient(135deg, #14243d, #1769aa);
+    }
+
+    .name {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .headline {
+      margin: 12px 0 0;
+      color: #dbeeff;
+      font-size: 1.08rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .contact {
+      display: grid;
+      gap: 8px;
+      min-width: 250px;
+      font-size: 0.95rem;
+      font-style: normal;
+    }
+
+    .contact a {
+      color: var(--white);
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .contact-label {
+      min-width: 24px;
+      color: #bfe3ff;
+      font-weight: 700;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+    }
+
+    .sidebar {
+      padding: 34px 28px;
+      background: var(--surface);
+      border-right: 1px solid var(--line);
+    }
+
+    .main {
+      padding: 34px 44px 48px;
+    }
+
+    section {
+      margin: 0 0 30px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--accent);
+      color: var(--accent-dark);
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 1.08rem;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .summary {
+      color: #28354a;
+      font-size: 1rem;
+    }
+
+    .job {
+      margin: 0 0 28px;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 3px;
+    }
+
+    .company {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .date {
+      flex: 0 0 auto;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .job-intro {
+      margin: 5px 0 10px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-style: italic;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    .skill-list,
+    .tool-list,
+    .education-list {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .skill-list li,
+    .tool-list li {
+      padding-bottom: 7px;
+      border-bottom: 1px solid var(--line);
+      color: #29364a;
+      font-size: 0.92rem;
+    }
+
+    .education-item {
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .education-item:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .education-item strong {
+      display: block;
+      color: var(--ink);
+    }
+
+    .education-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .project {
+      margin-bottom: 16px;
+      padding: 17px 18px;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      background: #fbfcfe;
+    }
+
+    .project:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-title {
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .project-type {
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .project p {
+      color: #3b4759;
+      font-size: 0.93rem;
+    }
+
+    .link-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .link-list li {
+      overflow-wrap: anywhere;
+      font-size: 0.9rem;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tag-list li {
+      margin: 0;
+      padding: 5px 9px;
+      border: 1px solid #c8d9e8;
+      border-radius: 4px;
+      color: #23496c;
+      background: #edf6fd;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    .footer {
+      padding: 18px 52px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      background: #fafbfd;
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    @media (max-width: 800px) {
+      .resume {
+        margin: 0;
+      }
+
+      .header {
+        grid-template-columns: 1fr;
+        padding: 34px 26px 28px;
+      }
+
+      .contact {
+        min-width: 0;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .main {
+        padding: 30px 26px 40px;
+      }
+
+      .job-header {
+        display: block;
+      }
+
+      .date {
+        display: block;
+        margin-top: 4px;
+      }
+
+      .footer {
+        padding: 18px 26px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .resume {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+      }
+
+      .header {
+        color: #000000;
+        background: #ffffff;
+        border-bottom: 2px solid #000000;
+      }
+
+      .headline,
+      .contact a,
+      .contact-label {
+        color: #000000;
+      }
+
+      a {
+        color: #000000;
+      }
+
+      .sidebar {
+        background: #ffffff;
+      }
+
+      .project {
+        break-inside: avoid;
+      }
+    }
+
+
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 5mm;
+  }
+
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    font-size: 7px !important;
+    line-height: 1.25 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .resume {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .header {
+    grid-template-columns: 1fr auto !important;
+    gap: 12px !important;
+    padding: 12px 16px !important;
+  }
+
+  .name {
+    font-size: 25px !important;
+  }
+
+  .headline {
+    margin-top: 5px !important;
+    font-size: 9px !important;
+  }
+
+  .contact {
+    min-width: 0 !important;
+    gap: 3px !important;
+    font-size: 7px !important;
+  }
+
+  .layout {
+    grid-template-columns: 28% 72% !important;
+  }
+
+  .sidebar {
+    padding: 12px 10px !important;
+    border-right: 1px solid #dce3ec !important;
+    border-bottom: 0 !important;
+  }
+
+  .main {
+    padding: 12px 14px !important;
+  }
+
+  section {
+    margin-bottom: 10px !important;
+  }
+
+  h2 {
+    margin-bottom: 5px !important;
+    padding-bottom: 3px !important;
+    font-size: 8px !important;
+  }
+
+  h3 {
+    font-size: 8px !important;
+  }
+
+  p {
+    margin-bottom: 4px !important;
+  }
+
+  ul {
+    margin-top: 3px !important;
+    padding-left: 12px !important;
+  }
+
+  li {
+    margin-bottom: 2px !important;
+  }
+
+  .skill-list,
+  .tool-list,
+  .education-list {
+    gap: 3px !important;
+  }
+
+  .skill-list li,
+  .tool-list li {
+    padding-bottom: 2px !important;
+    font-size: 6.5px !important;
+  }
+
+  .tag-list {
+    gap: 3px !important;
+  }
+
+  .tag-list li {
+    padding: 2px 4px !important;
+    font-size: 6px !important;
+  }
+
+  .education-item {
+    padding-bottom: 5px !important;
+  }
+
+  .job {
+    margin-bottom: 10px !important;
+  }
+
+  .job-header {
+    gap: 5px !important;
+    margin-bottom: 2px !important;
+  }
+
+  .date {
+    font-size: 6.5px !important;
+  }
+
+  .job-intro {
+    margin: 3px 0 4px !important;
+    font-size: 7px !important;
+  }
+
+  .project {
+    margin-bottom: 5px !important;
+    padding: 5px 7px !important;
+  }
+
+  .project p {
+    font-size: 7px !important;
+  }
+
+  .project-type {
+    margin-bottom: 3px !important;
+    font-size: 6px !important;
+  }
+
+  .link-list {
+    gap: 3px !important;
+  }
+
+  .link-list li {
+    font-size: 7px !important;
+  }
+
+  .footer {
+    padding: 5px !important;
+    font-size: 6px !important;
+  }
+
+  a {
+    color: #1769aa !important;
+    text-decoration: none !important;
+  }
+
+  .job,
+  .project,
+  .education-item {
+    break-inside: avoid;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <main class="resume">
+    <header class="header">
+      <div>
+        <h1 id="resume-name" class="name">Karthikeyan</h1>
+        <p id="resume-headline" class="headline">Senior Front-End Developer | Dynamic Creative Developer | Ad Operations</p>
+      </div>
+
+      <address id="contact-details" class="contact">
+        <div class="contact-item">
+          <span class="contact-label">E</span>
+          <a href="mailto:vpkarthivp@gmail.com">vpkarthivp@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">P</span>
+          <a href="tel:+918754743066">+91 87547 43066</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">W</span>
+          <a href="https://vpkarthivp.github.io/portfolio/index.html" target="_blank" rel="noopener">Portfolio and work samples</a>
+        </div>
+      </address>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section aria-labelledby="skills-heading">
+          <h2 id="skills-heading">Core Skills</h2>
+          <ul class="skill-list">
+            <li>Hand-coded HTML5 dynamic and animated banners</li>
+            <li>Static and graphic banner resizing</li>
+            <li>Rich-media banner development and QA</li>
+            <li>Dynamic creative optimization and DCO support</li>
+            <li>Ad trafficking and campaign optimization</li>
+            <li>HTML banner and third-party tag troubleshooting</li>
+            <li>Creative showcase development and maintenance</li>
+            <li>Workflow and resource management</li>
+            <li>Team coordination, training, and quality analysis</li>
+            <li>Billing reports, delivery reports, and team summaries</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="technology-heading">
+          <h2 id="technology-heading">Technology</h2>
+          <ul id="technology-list" class="tag-list">
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>JSON</li>
+            <li>GSAP</li>
+            <li>SVG</li>
+            <li>Google Web Designer</li>
+            <li>GitHub</li>
+            <li>WordPress</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Figma</li>
+            <li>Adobe XD</li>
+            <li>Sketch</li>
+            <li>Jira</li>
+            <li>Trello</li>
+            <li>Slack</li>
+            <li>Hoxton</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="ad-server-heading">
+          <h2 id="ad-server-heading">Ad Platforms</h2>
+          <ul class="tool-list">
+            <li>Campaign Manager 360 / DCM</li>
+            <li>Google Ad Manager / DFP</li>
+            <li>DV360 / DBM</li>
+            <li>Sizmek</li>
+            <li>Adform / Ad Tech</li>
+            <li>AppNexus</li>
+            <li>Celtra</li>
+            <li>Flashtalking</li>
+            <li>Facebook Business Manager</li>
+            <li>AdWords</li>
+            <li>One Creative AOL</li>
+            <li>Tubemogul</li>
+            <li>Adobe Omniture</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+          <div class="education-list">
+            <div class="education-item">
+              <strong id="degree-title">Bachelor of Engineering, Electronics and Communication Engineering</strong>
+              <span id="degree-school">K. Ramakrishnan College of Engineering, Anna University Board</span>
+              <span id="degree-details">Trichy, Tamil Nadu | 2013 | CGPA: 7.2</span>
+            </div>
+
+            <div class="education-item">
+              <strong id="hsc-title">Higher Secondary Certificate</strong>
+              <span id="hsc-school">KAPV Higher Secondary School, State Board</span>
+              <span id="hsc-details">Trichy, Tamil Nadu | 2009 | 73%</span>
+            </div>
+
+            <div class="education-item">
+              <strong id="sslc-title">Secondary School Leaving Certificate</strong>
+              <span id="sslc-school">KAPV Higher Secondary School, State Board</span>
+              <span id="sslc-details">Trichy, Tamil Nadu | 2007 | 80%</span>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <div class="main">
+        <section aria-labelledby="profile-heading">
+          <h2 id="profile-heading">Professional Profile</h2>
+          <p id="profile-summary" class="summary">
+            Senior Front-End Developer and Dynamic Creative Developer with more than seven years of experience in HTML5 advertising, DCO support, creative development, ad operations, and campaign delivery. Experienced in building static, animated, dynamic, carousel, expandable, interstitial, skin, and native banner formats for global brands.
+          </p>
+          <p id="profile-strengths">
+            Strong in translating creative briefs into production-ready digital advertising assets, troubleshooting HTML banners and third-party tags, supporting ad-server workflows, and coordinating multiple projects under deadline. Recognized for technical quality, process management, team support, client communication, and continuous improvement.
+          </p>
+        </section>
+
+        <section aria-labelledby="experience-heading">
+          <h2 id="experience-heading">Professional Experience</h2>
+
+          <article class="job">
+            <div class="job-header">
+              <div>
+                <h3 id="wpp-role">Senior Front-End Developer</h3>
+                <div id="wpp-company" class="company">WPP Production, Chennai</div>
+              </div>
+              <div id="wpp-date" class="date">December 2021 – Present</div>
+            </div>
+
+            <p id="wpp-intro" class="job-intro">
+              Supporting HTML advertising production, platform workflows, and creative development for digital campaigns.
+            </p>
+
+            <ul id="wpp-responsibilities">
+              <li>Supported the development and delivery of advertiser HTML banners for Campaign Manager 360 / DCM and Sizmek platforms.</li>
+              <li>Worked on campaigns and banner support for Castrol, Sage, Walgreens, Workday, and HSBC.</li>
+              <li>Developed working knowledge of the Hoxton in-house tool used to automate and build HTML and static advertising assets, as well as video ads.</li>
+              <li>Applied SVG path animation techniques to live project work.</li>
+              <li>Contributed to HTML5 banner troubleshooting, quality checks, and production support.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="job-header">
+              <div>
+                <h3 id="dentsu-role">Senior Dynamic Creative Developer – Account Management and Creative Development</h3>
+                <div id="dentsu-company" class="company">Dentsu (Paragon Digital Services), Chennai</div>
+              </div>
+              <div id="dentsu-date" class="date">August 2014 – November 2021</div>
+            </div>
+
+            <p id="dentsu-intro" class="job-intro">
+              Delivered dynamic creative, rich-media, ad operations, account support, and quality assurance services for digital advertising campaigns.
+            </p>
+
+            <ul id="dentsu-responsibilities">
+              <li>Analyzed creative briefs, planned development workflows, and delivered dynamic HTML5 banners and campaign assets.</li>
+              <li>Built static, animated, carousel, expandable, native, and other rich-media banner formats.</li>
+              <li>Supported DCO profile and feed setup, dynamic linking, and tear-sheet preview generation.</li>
+              <li>Managed campaign trafficking in CM360, DV360, and other publisher and ad-server consoles.</li>
+              <li>Performed quality assurance for rich-media advertisements, including expandable, hover, interstitial, and skin formats.</li>
+              <li>Troubleshot HTML banners, third-party tags, creative behavior, and delivery issues.</li>
+              <li>Developed internal tools to improve ad operations workflows and team effectiveness.</li>
+              <li>Coordinated internal team workflows, supported resource planning, and monitored quality and performance.</li>
+              <li>Prepared campaign delivery reports, billing reports, client reports, and team summary decks.</li>
+              <li>Supported client communication, project submissions, process management, and account requirements.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section aria-labelledby="projects-heading">
+          <h2 id="projects-heading">Selected Work and Project Areas</h2>
+
+          <article class="project">
+            <div id="project-one-title" class="project-title">HTML5 Banner Development</div>
+            <div id="project-one-type" class="project-type">Creative Development</div>
+            <p id="project-one-description">
+              Developed and supported digital advertising creatives, including animated, dynamic, carousel, expandable, native, interstitial, and skin banner formats using HTML, CSS, JavaScript, JSON, jQuery, GSAP, and SVG.
+            </p>
+          </article>
+
+          <article class="project">
+            <div id="project-two-title" class="project-title">DCO and Campaign Operations</div>
+            <div id="project-two-type" class="project-type">Ad Operations</div>
+            <p id="project-two-description">
+              Supported DCO profile and feed setup, dynamic linking, creative previews, campaign trafficking, ad-server implementation, QA, optimization, and reporting across major advertising platforms.
+            </p>
+          </article>
+
+          <article class="project">
+            <div id="project-three-title" class="project-title">Hoxton Workflow Automation</div>
+            <div id="project-three-type" class="project-type">In-House Production Tool</div>
+            <p id="project-three-description">
+              Worked with Hoxton, an in-house production tool used to automate the creation and build process for HTML, static, and video advertising assets.
+            </p>
+          </article>
+
+          <article class="project">
+            <div id="project-four-title" class="project-title">Creative Showcase and Web Support</div>
+            <div id="project-four-type" class="project-type">Front-End Development</div>
+            <p id="project-four-description">
+              Built and maintained creative showcase pages and related web experiences, with responsibility for troubleshooting, content support, and ongoing technical maintenance.
+            </p>
+          </article>
+        </section>
+
+        <section aria-labelledby="work-samples-heading">
+          <h2 id="work-samples-heading">Work Samples</h2>
+          <ul id="work-sample-links" class="link-list">
+            <li><a href="https://vpkarthivp.github.io/ads-preview/index.html" target="_blank" rel="noopener">Sample Recreation</a></li>
+            <li><a href="https://vpkarthivp.github.io/showcase/1.mp4" target="_blank" rel="noopener">Creative Showcase Video</a></li>
+            <li><a href="https://vpkarthivp.github.io/iSearch/" target="_blank" rel="noopener">iSearch Project</a></li>
+            <li><a href="https://vpkarthivp.github.io/hogarth/160x600" target="_blank" rel="noopener">160 × 600 Banner</a></li>
+            <li><a href="https://vpkarthivp.github.io/hogarth/300x250" target="_blank" rel="noopener">300 × 250 Banner</a></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="certifications-heading">
+          <h2 id="certifications-heading">Certifications</h2>
+          <p id="certifications-content">
+            Seven Google certifications related to dynamic banner and rich-media banner development.
+          </p>
+        </section>
+
+        <section aria-labelledby="achievements-heading">
+          <h2 id="achievements-heading">Achievements</h2>
+          <ul id="achievements-list">
+            <li>Contributed to the team recognized with the “Best Use of Creative” award by Google in London in 2017.</li>
+            <li>Contributed to the team recognized with the “Digital Agency of the Year” award at Scotland DigitalTech-18.</li>
+            <li>Received the “Employee of the Year – 2017” award from the organization.</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="interests-heading">
+          <h2 id="interests-heading">Interests</h2>
+          <p id="interests-content">Playing and watching cricket, playing chess, and listening to music.</p>
+        </section>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p id="resume-footer">Karthikeyan | Senior Front-End Developer and Dynamic Creative Developer</p>
+    </footer>
+  </main>
+
+</body></html>
